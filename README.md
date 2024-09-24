@@ -1,4 +1,4 @@
-# Dlvhdr Formulae
+# dlvhdr Formulae
 
 ## How do I install these formulae?
 
