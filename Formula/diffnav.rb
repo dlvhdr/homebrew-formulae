@@ -5,7 +5,7 @@
 class Diffnav < Formula
   desc "Git diff pager based on delta but with a file tree, à la GitHub"
   homepage "https://github.com/dlvhdr/diffnav"
-  version "0.8.0"
+  version "0.8.1"
   license "MIT"
 
   depends_on "git"
@@ -13,16 +13,16 @@ class Diffnav < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dlvhdr/diffnav/releases/download/v0.8.0/diffnav_Darwin_x86_64.tar.gz"
-      sha256 "1ed3511417c353bbc80e020eaee4734db1ba2dca354f483820d2a0b79d381827"
+      url "https://github.com/dlvhdr/diffnav/releases/download/v0.8.1/diffnav_Darwin_x86_64.tar.gz"
+      sha256 "c353e2c6df7caac85aab91d9b670eee91d0b100a0b9f1d29a8dfd595d341a496"
 
       def install
         bin.install "diffnav"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dlvhdr/diffnav/releases/download/v0.8.0/diffnav_Darwin_arm64.tar.gz"
-      sha256 "c5b38c8fb54a663ad8574390ba05ece395bee358cf925ce54e170b2ee218958e"
+      url "https://github.com/dlvhdr/diffnav/releases/download/v0.8.1/diffnav_Darwin_arm64.tar.gz"
+      sha256 "f783f9c81875a76b2ac73b7eed939d00291f639d80fb567768cace17f4298a0d"
 
       def install
         bin.install "diffnav"
@@ -32,15 +32,15 @@ class Diffnav < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dlvhdr/diffnav/releases/download/v0.8.0/diffnav_Linux_x86_64.tar.gz"
-      sha256 "672003ac0f87b7972216c46778e6d4b33c5595cb7c5dff503bde4210eac2e456"
+      url "https://github.com/dlvhdr/diffnav/releases/download/v0.8.1/diffnav_Linux_x86_64.tar.gz"
+      sha256 "0163dac69438ab310f8ead56c04c939041481569cca9c86f61ebb02c46c671b5"
       def install
         bin.install "diffnav"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dlvhdr/diffnav/releases/download/v0.8.0/diffnav_Linux_arm64.tar.gz"
-      sha256 "63415b587b55650bb366ecbc9548bc0854da2972b34c41f59c693e517ca81eef"
+      url "https://github.com/dlvhdr/diffnav/releases/download/v0.8.1/diffnav_Linux_arm64.tar.gz"
+      sha256 "21dad3d7b87ec2f8900269739627d33aad6bc97a2a539a756c210682b5b2219e"
       def install
         bin.install "diffnav"
       end
