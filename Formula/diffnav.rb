@@ -5,7 +5,6 @@
 class Diffnav < Formula
   desc "Git diff pager based on delta but with a file tree, à la GitHub"
   homepage "https://github.com/dlvhdr/diffnav"
-  version "0.12.0"
   license "MIT"
 
   depends_on "git"
@@ -14,7 +13,7 @@ class Diffnav < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/dlvhdr/diffnav/releases/download/v0.12.0/diffnav_Darwin_x86_64.tar.gz"
-      sha256 "06eb140c47d0bc43e441675b973f591671b97a55a0a57158ecfa9c8fa0241b7b"
+      sha256 "29a45a968e22703668ed0cd1969cf333b96b039b015755cc5312f80d315a78a1"
 
       define_method(:install) do
         bin.install "diffnav"
@@ -22,7 +21,7 @@ class Diffnav < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/dlvhdr/diffnav/releases/download/v0.12.0/diffnav_Darwin_arm64.tar.gz"
-      sha256 "5fcc0c949ae70eb8c5b52870af228604bf05f254222a78df6abf7547a56aed12"
+      sha256 "2db80564b9e3687fad83769ef52209fadc56702c03614afb8855261a81d1d38a"
 
       define_method(:install) do
         bin.install "diffnav"
@@ -33,14 +32,14 @@ class Diffnav < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/dlvhdr/diffnav/releases/download/v0.12.0/diffnav_Linux_x86_64.tar.gz"
-      sha256 "a6fe16aaf87b6ab0a1c45bb1e9c62716d133f9ca5d42abe5baa05b63d50cae30"
+      sha256 "1531569b74863f08dd82379041fbc9c0cf5103893ac5b3ff053453dd048bb807"
       define_method(:install) do
         bin.install "diffnav"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/dlvhdr/diffnav/releases/download/v0.12.0/diffnav_Linux_arm64.tar.gz"
-      sha256 "a07a7a222081b066741845619d47cef275d03f98f254c4c564286c34e8429f18"
+      sha256 "5d23e9b5cc8e4d2be0463886d57ac0590c348e24b5611eb54a4bc84685e707c9"
       define_method(:install) do
         bin.install "diffnav"
       end
