@@ -5,7 +5,6 @@
 class Diffnav < Formula
   desc "Git diff pager based on delta but with a file tree, à la GitHub"
   homepage "https://github.com/dlvhdr/diffnav"
-  version "0.12.0"
   license "MIT"
 
   depends_on "git"
